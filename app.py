@@ -11,7 +11,7 @@ from APi_key import API_KEY
 # تحميل البيانات
 def load_data():
     
-    movies = pd.read_csv('dataset/tmdb_5000_movies.csv')
+    movies = pd.read_csv('tmdb_5000_movies.csv')
     credits = pd.read_csv('tmdb_5000_credits.csv')
     
     return movies.merge(credits, on='title')
